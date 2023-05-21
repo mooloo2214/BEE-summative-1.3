@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Styles/style_index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Raleway:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+   
+    <title>Document</title>
+  </head>
+  <body>
+<section class="body">
+  <div class="placeholder__navbar"></div>
+    <nav class="navbar">
+      <div class="burgermenu">
+        <span class="burgermenu__bar"></span>
+        <span class="burgermenu__bar"></span>
+        <span class="burgermenu__bar"></span>
+      </div>
+
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+
+          <a href="#" class="navbar__link">Add device</a>
+        </li>
+
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Managements</a>
+        </li>
+
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Activity</a>
+        </li>
+
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Sync</a>
+        </li>
+      </ul>
+
+      <div class="navbar__main">
+
+  <a href="/index.html"><div> 
+            <img class="navbar__main-icon" src="images/navbar__main_icon-01.svg">
+            Home
+        </img>
+      </div>
+      </a>
+   
+
+      <a href="#"><div>
+        <img class="navbar__main-icon" src="images/navbar__main_icon-02.svg">
+        Routine
+    </img>
+  </div>
+  </a>
+
+  <a href="#"><div>
+    <img class="navbar__main-icon" src="images/navbar__main_icon-03.svg">
+    Notification
+</img>
+</div>
+</a>
+    </div>
+
+
+
+      <div class="top">
+      
+        <div class="top__profile"></div>
+
+      <div class="homename">
+        <button class="homename__dropbtn" onclick="myFunction()">My Home
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+        <div class="homename__content" id="myDropdown">
+          <a href="#">Change Home</a>
+          <a href="#">Home Management</a>
+         
+        </div>
+        </div> 
+
+
+     
+    </div>
+
+    </nav>
+
+
+<div class="fullcontent">
+
+    <div class="banner">
+<div class="weather">
+  <div class="weather__info"><i class="fa fa-cloud"></i><span id="cloudy">Cloudy</span></div>
+  <div class="weather__info"><h3>24&#8451</h3><h5>Indoor Temp</h5></div>
+    <div class="weather__info"><h3>12&#8451</h3><h5>Outdoor Temp</h5></div>
+</div>
+
+<div class="energy">
+  <div class="energy__info">
+  <div> <i class="fa fa-flash"></i> <h4>Estimated energy <br>bill for this month</h4></div>
+  <div ><i class='fa-solid fa-ellipsis grey'></i></div>
+</div>
+
+<div class="energy__bar">
+<h4>$36.00</h4>
+<div class="energy__bar--progress"></div>
+
+</div>
+    </div>
+    
+  </div>
+  
+  <div class="midnav">
+    <a href="#" tabindex="1" >Active Devices</a>
+    <a href="#" tabindex="1" >Rooms</a>
+    <a href="#" tabindex="1" >All Devices</a>
+</div>
+
+<div class="room">
+  <div class="room__instruction">
+    <h5>Drag and drop to reorder</h5>
+    <i class='fa-solid fa-ellipsis grey'></i>
+  </div>
+
+  <div class="room__content">
+    <div  class="room__individual--bg">
+<div  id="roomHeader1" class="room__individual" onclick="showDiv('room__device1'); displayRow('roomHeader1'); displaycolumn('headerFirstInfo1');">
+  <div id="headerFirstInfo1" class="room__type"><object class="room_icon" data="/images/bedroom_purple.svg" class="icon-bedroom">
+</object>  <div class="room__name"><h4>My Bedroom</h4><h5>3 total</h5></div></div>
+<div class="room__status"><h3>1</h3><h5>Active</h5></div>
+</div>
+
+<div id="room__device1">
+
+ 
+  <div class="device">
+ 
+    <div class="device__feature">
+<div id="lightbulb" class="device__lightbulb-on"></div>
+
+<class class="toggle__div"></class>
+<label class="toggle">
+  <input type="checkbox">
+  <span class="slider"></span>
+  <span class="labels" data-on="On" data-off="Off"></span>
+  </label>
+</div>
+
+  <div class="device__info">
+    <h5>Light</h5>
+    <h6>My Bedroom</h6>
+  </div>
+
+  </div>
+
+
+
+ 
+  <div class="device">
+   
+    <div class="device__feature">
+<div id="lightbulb" class="device__lightbulb-off"></div>
+<class class="toggle__div"></class>
+<label class="toggle">
+  <input type="checkbox">
+  <span class="slider"></span>
+  <span class="labels" data-on="On" data-off="Off"></span>
+  </label>
+</div>
+
+  <div class="device__info">
+    <h5>Book Light</h5>
+    <h6>My Bedroom</h6>
+  </div>
+
+  </div>
+  
+
+ 
+  </div>
+
+</div>
+
+
+ <div  class="room__individual--bg">
+  <div  id="roomHeader2" class="room__individual" onclick="showDiv('room__device2'); displayRow('roomHeader2'); displaycolumn('headerFirstInfo2');">
+    <div id="headerFirstInfo2" class="room__type"><object class="room_icon" data="/images/livingroom_purple.svg" class="icon-livingroom">
+  </object>  <div class="room__name"><h4>Living Room</h4><h5>1 total</h5></div></div>
+<div class="room__status"><h3>1</h3><h5>Active</h5></div>
+</div>
+<div id="room__device2">
+
+
+  <div class="device">
+    <a href="/blind.html">
+    <div class="device__feature">
+<div class="device__image"></div>
+</div>
+
+  <div class="device__info">
+    <h5>Blind</h5>
+    <h6>Living Room</h6>
+  </div>
+</a>
+  </div>
+
+  
+  </div>
+</div>
+
+
+
+ <div  class="room__individual--bg">
+  <div  id="roomHeader3" class="room__individual" onclick="showDiv('room__device3'); displayRow('roomHeader3'); displaycolumn('headerFirstInfo3');">
+    <div id="headerFirstInfo3" class="room__type">
+    <object class="room_icon"  data="/images/bedroom_purple.svg" class="icon-bedroom"> </object> 
+    <div class="room__name"><h4>Small Bedroom</h4><h5>2 total</h5></div></div>
+<div class="room__status"><h3>0</h3><h5>Active</h5></div>
+</div>
+
+<div id="room__device3">
+
+  
+    <div class="device">
+      <a href="/light.html">
+      <div class="device__feature">
+  <div id="lightbulb" class="device__lightbulb-off"></div>
+  
+  <class class="toggle__div"></class>
+  <label class="toggle">
+    <input type="checkbox">
+    <span class="slider"></span>
+    <span class="labels" data-on="On" data-off="Off"></span>
+    </label>
+  </div>
+  
+    <div class="device__info">
+      <h5>Star Light</h5>
+      <h6>Small Bedroom</h6>
+    </div>
+  </a>
+    </div>
+
+  
+
+  
+    <div class="device">
+      <a href="/blind.html">
+      <div class="device__feature">
+  <div class="device__image"></div>
+  </div>
+  
+    <div class="device__info">
+      <h5>Blind</h5>
+      <h6>Living Room</h6>
+    </div>
+  </a>
+
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+<div  class="room__individual--bg">
+  <div  id="roomHeader4" class="room__individual" onclick="showDiv('room__device4'); displayRow('roomHeader4'); displaycolumn('headerFirstInfo4');">
+    <div id="headerFirstInfo4" class="room__type">
+    <object class="room_icon"  data="/images/Front Door.svg" class="icon-bedroom"> </object> 
+    <div class="room__name"><h4>Front Door</h4><h5>2 total</h5></div></div>
+<div class="room__status"><h3>2</h3><h5>Active</h5></div>
+</div>
+
+<div id="room__device4">
+
+
+    <div class="device">
+      <div class="device__feature">
+  <div id="securityCamera" class="device__camera-on"></div>
+  
+  <class class="toggle__div"></class>
+  <label class="toggle">
+    <input type="checkbox">
+    <span class="slider"></span>
+    <span class="labels" data-on="On" data-off="Off"></span>
+    </label>
+  </div>
+  
+    <div class="device__info">
+      <h5>Security camera</h5>
+      <h6>Front Door</h6>
+    </div>
+    </div>
+
+  
+
+  
+    <div class="device">
+      <a href="/blind.html">
+      <div class="device__feature">
+  <div class="device__image"></div>
+  </div>
+  
+    <div class="device__info">
+      <h5>Blind</h5>
+      <h6>Front Door</h6>
+    </div>
+  </a>
+    </div>
+
+
+
+
+
+  </div>
+</div>
+
+
+
+
+</div>
+
+  </div>
+
+
+</div>
+
+  <div class="bottombar">
+
+    
+    <div href="/index.html">
+        <img class="bottombar__icon" src="images/bottomnav_icon-03.svg">
+        Home
+    </img>
+  </div>
+
+
+  <div href="#">
+    <img class="bottombar__icon" src="images/bottomnav_icon-02.svg">
+    Routine
+</img>
+</div>
+
+<div href="#">
+<img class="bottombar__icon " src="images/bottomnav_icon-01.svg">
+Notification
+</img>
+</div>
+   
+</section>
+    
+  </body>
+  
+</html>
