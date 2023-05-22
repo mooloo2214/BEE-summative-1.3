@@ -625,7 +625,7 @@ h4 {
   height: 4.2em;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("images/blind_purple.png")
+  background-image: url("../images/blind_purple.png")
 }
 //
 
@@ -637,7 +637,7 @@ h4 {
   width: 4.2em;
   height: 4.2em;
   background-repeat: no-repeat;
-  background-image: url("images/Camera_icon_ON.svg");
+  background-image: url("../images/Camera_icon_ON.svg");
 }
 
 .device__camera-off {
@@ -645,7 +645,7 @@ h4 {
   cursor: pointer;
   width: 4.2em;
   height: 4.2em;
-background-image: url("images/Camera_icon_OFF.svg");
+background-image: url("../images/Camera_icon_OFF.svg");
   background-repeat: no-repeat;
 }
 
@@ -657,7 +657,7 @@ background-image: url("images/Camera_icon_OFF.svg");
   width: 4.2em;
   height: 4.2em;
   background-repeat: no-repeat;
-  background-image: url("images/lightBulb_icon_ON.svg") !important;
+  background-image: url("../images/lightBulb_icon_ON.svg") !important;
 }
 
 
@@ -666,7 +666,7 @@ background-image: url("images/Camera_icon_OFF.svg");
   cursor: pointer;
   width: 4.2em;
   height: 4.2em;
-  background-image: url("images/lightBulb_icon_OFF.svg");
+  background-image: url("../images/lightBulb_icon_OFF.svg");
   background-repeat: no-repeat;
 }
 
