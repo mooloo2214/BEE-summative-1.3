@@ -8,38 +8,33 @@ navbar__menu.classList.toggle("active");
 
 })
 
+//Home drop down button for settings
+let homeDropBtn = document.querySelector(".homename__dropbtn");
+let homeDropBtnContent = document.querySelector(".homename__content");
 
+homeDropBtn.addEventListener("click",function(){
+  console.log("event listener working")
+  if (homeDropBtnContent.classList.contains("show")) {
+    homeDropBtnContent.classList.remove("show");
+  }else {
+    homeDropBtnContent.classList.toggle("show");
 
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
   }
-  
-  
-  window.onclick = function(e) {
-    if (!e.target.matches('.homename__dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-      }
-    }
-  }
-
-
-
-///
-/*  
-let light = document.getElementById('lightbulb');
-
-light.addEventListener('click', function(light){
-  light.target.classList.toggle('device__lightbulb-on');
-  light.target.classList.toggle('device__lightbulb-off');
 })
-*/
 
+  
+
+
+
+
+
+//Light toggle on small light icon
 let lightOff = document.querySelectorAll(".device__lightbulb-off");
 let lightOn = document.querySelectorAll(".device__lightbulb-on");
 
 function clickHandler(event){
+  console.log(event);
+  //This toggles both classes depending on what's active.
     event.target.classList.toggle('device__lightbulb-off');
     event.target.classList.toggle('device__lightbulb-on');
 }
